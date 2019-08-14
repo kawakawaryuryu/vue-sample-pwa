@@ -11,19 +11,19 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js')
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  '/precache-manifest.a652e0f882b7627fa602ae9fa53c84b4.js'
-)
+  "precache-manifest.734ff08126ec307a4d9498930309593f.js"
+);
 
-workbox.core.setCacheNameDetails({ prefix: 'vue-sample-pwa' })
+workbox.core.setCacheNameDetails({prefix: "vue-sample-pwa"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
  * requests for URLs in the manifest.
  * See https://goo.gl/S9QRab
  */
-self.__precacheManifest = [].concat(self.__precacheManifest || [])
-workbox.precaching.suppressWarnings()
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {})
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
