@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <h1>Qiita Search</h1>
+    <QiitaSearch></QiitaSearch>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import QiitaSearch from '@/components/QiitaSearch.vue' // @ is an alias to /src
 
 @Component({
   components: {
-    HelloWorld
+    QiitaSearch
   }
 })
 export default class Home extends Vue {}
