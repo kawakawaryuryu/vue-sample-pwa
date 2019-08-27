@@ -29,7 +29,6 @@ export default class QiitaSearch extends Vue {
       const response: AxiosResponse = await axios.get<QiitaArticle[]>(`https://qiita.com/api/v2/tags/${tag}/items`)
       this.articles = response.data
     } catch (e) {
-      console.log(e)
       this.articles = []
     }
   }
