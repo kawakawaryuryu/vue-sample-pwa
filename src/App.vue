@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+<!--    <router-view/>-->
+    <QiitaSearch></QiitaSearch>
   </div>
 </template>
 
@@ -29,3 +30,12 @@
   color: #42b983;
 }
 </style>
+<script>
+import { Component, Vue } from 'vue-property-decorator'
+import QiitaSearch from './components/QiitaSearch'
+@Component({
+  components: { QiitaSearch }
+})
+export default class App extends Vue {
+}
+</script>
