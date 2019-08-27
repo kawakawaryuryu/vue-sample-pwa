@@ -29,3 +29,12 @@
   color: #42b983;
 }
 </style>
+<script>
+import { Component, Vue } from 'vue-property-decorator'
+import QiitaSearch from './components/QiitaSearch'
+@Component({
+  components: { QiitaSearch }
+})
+export default class App extends Vue {
+}
+</script>
