@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -35,6 +35,5 @@ import QiitaSearch from './components/QiitaSearch'
 @Component({
   components: { QiitaSearch }
 })
-export default class App extends Vue {
-}
+export default class App extends Vue {}
 </script>
