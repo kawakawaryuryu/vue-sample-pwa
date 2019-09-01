@@ -20,11 +20,11 @@ export default class QiitaSearch extends Vue {
   private articles: QiitaArticle[] = []
   private tag: string = ''
 
-  public async created () {
+  public async created() {
     this.articles = []
   }
 
-  public async search (tag: string) {
+  public async search(tag: string) {
     try {
       const response: AxiosResponse = await axios.get<QiitaArticle[]>(
         `https://qiita.com/api/v2/tags/${tag}/items`
