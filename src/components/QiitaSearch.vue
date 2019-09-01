@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="text" v-model="tag"/>
+    <input type="text" v-model="tag" />
     <button @click="search(tag)">search</button>
     <ul>
       <li v-for="article of articles" v-bind:key="article.id">
@@ -17,16 +17,18 @@ import axios, { AxiosResponse } from 'axios'
 
 @Component
 export default class QiitaSearch extends Vue {
-  private articles: QiitaArticle[] = [];
-  private tag: string = '';
+  private articles: QiitaArticle[] = []
+  private tag: string = ''
 
-  public async created () {
+  public async created() {
     this.articles = []
   }
 
-  public async search (tag: string) {
+  public async search(tag: string) {
     try {
-      const response: AxiosResponse = await axios.get<QiitaArticle[]>(`https://qiita.com/api/v2/tags/${tag}/items`)
+      const response: AxiosResponse = await axios.get<QiitaArticle[]>(
+        `https://qiita.com/api/v2/tags/${tag}/items`
+      )
       this.articles = response.data
     } catch (e) {
       this.articles = []
