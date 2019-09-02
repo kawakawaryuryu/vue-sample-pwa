@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vue-sample-pwa/precache-manifest.5a94282cf412149d704abfc6d39d61c5.js"
+  "/vue-sample-pwa/precache-manifest.a9ce13d65ea87a0299d46ca1f0b18812.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-sample-pwa"});
@@ -27,3 +27,5 @@ workbox.core.setCacheNameDetails({prefix: "vue-sample-pwa"});
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerRoute(/https:\/\/qiita.com\/api\/.*/, workbox.strategies.networkFirst({ "cacheName":"qiita-cache", plugins: [new workbox.expiration.Plugin({"maxEntries":10,"maxAgeSeconds":300,"purgeOnQuotaError":false}), new workbox.cacheableResponse.Plugin({"statuses":[0,200]})] }), 'GET');
