@@ -1,29 +1,11 @@
 # vue-sample-pwa
+Vue.jsを利用したPWAのサンプルコードです。  
+アプリケーションはGithub Pagesに公開しています。
 
-## Project setup
-```
-yarn install
-```
+## URL
+https://kawakawaryuryu.github.io/vue-sample-pwa/
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Qiita
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## CircleCI
+[![CircleCI](https://circleci.com/gh/kawakawaryuryu/vue-sample-pwa.svg?style=svg)](https://circleci.com/gh/kawakawaryuryu/vue-sample-pwa)
