@@ -20,7 +20,7 @@ export default class QiitaSearch extends Vue {
   private articles: QiitaArticle[] = []
   private tag: string = ''
 
-  public async created() {
+  public created() {
     this.articles = []
   }
 
